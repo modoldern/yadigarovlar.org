@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", serif;
+    background: #e9e3d1;
+    overflow-x: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+/* --- Hareketli Madalya Efekti --- */
+
+.floating-medals {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.floating-medals span {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: radial-gradient(circle, #d4b26f 0%, #9b7d3b 70%);
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: float 12s linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: translateY(-10vh) scale(1);
+        opacity: 0.2;
+    }
+}
+
+/* Random pozisyonlar */
+.floating-medals span:nth-child(1) {
+    left: 10%;
+    animation-duration: 11s;
+    animation-delay: 0s;
+}
+
+.floating-medals span:nth-child(2) {
+    left: 25%;
+    animation-duration: 13s;
+    animation-delay: 2s;
+}
+
+.floating-medals span:nth-child(3) {
+    left: 40%;
+    animation-duration: 10s;
+    animation-delay: 4s;
+}
+
+.floating-medals span:nth-child(4) {
+    left: 55%;
+    animation-duration: 14s;
+    animation-delay: 1s;
+}
+
+.floating-medals span:nth-child(5) {
+    left: 70%;
+    animation-duration: 12s;
+    animation-delay: 3s;
+}
+
+.floating-medals span:nth-child(6) {
+    left: 85%;
+    animation-duration: 16s;
+    animation-delay: 0s;
+}
+
+.floating-medals span:nth-child(7) {
+    left: 15%;
+    animation-duration: 15s;
+    animation-delay: 5s;
+}
+
+.floating-medals span:nth-child(8) {
+    left: 35%;
+    animation-duration: 12s;
+    animation-delay: 1s;
+}
+
+.floating-medals span:nth-child(9) {
+    left: 60%;
+    animation-duration: 11s;
+    animation-delay: 4s;
+}
+
+.floating-medals span:nth-child(10) {
+    left: 80%;
+    animation-duration: 17s;
+    animation-delay: 2s;
+}
+
+/* --- Sayfa Açılış Animasyonu --- */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 1.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- İçerik --- */
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #3a2f1b;
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+}
+
+.image-box img {
+    width: 260px;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.text {
+    max-width: 700px;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 20px;
+    color: #4a3e25;
+
+}
