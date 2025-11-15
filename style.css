@@ -3,9 +3,9 @@ body {
     padding: 0;
     font-family: "Georgia", serif;
     background: #e9e3d1;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
@@ -151,4 +151,20 @@ body {
     padding: 0 20px;
     color: #4a3e25;
 
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #666666;
+    max-width: 700px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.copyright a {
+    color: #999;
+    text-decoration: none;
+    background-color:#4a3e25 ;
+    padding: 0 10px
 }
