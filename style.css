@@ -8,7 +8,6 @@ body {
     height: 100vh;
 }
 
-/* --- Hareketli Madalya Efekti --- */
 
 .floating-medals {
     position: fixed;
@@ -43,7 +42,6 @@ body {
     }
 }
 
-/* Random pozisyonlar */
 .floating-medals span:nth-child(1) {
     left: 10%;
     animation-duration: 11s;
@@ -104,7 +102,6 @@ body {
     animation-delay: 2s;
 }
 
-/* --- Sayfa Açılış Animasyonu --- */
 
 .fade-in {
     opacity: 0;
@@ -118,7 +115,6 @@ body {
     }
 }
 
-/* --- İçerik --- */
 .box {
     display: flex;
     justify-content: center;
